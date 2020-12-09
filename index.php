@@ -1,19 +1,19 @@
-<?php function identity($age = 10, $gender = 'Femme')
+<?php function identity($age = 18, $gender = 'Femme')
 {
     if (($age >= 18) && ($gender == 'Homme')) 
     {
-        echo 'Vous êtes un homme et vous êtes majeur.';
+        $identity = 'Vous êtes un homme et vous êtes majeur.';
     } elseif (($age <= 18) && ($gender == 'Homme')) 
     {
-        echo 'Vous êtes un homme et vous êtes mineur.';
+        $identity = 'Vous êtes un homme et vous êtes mineur.';
     } elseif (($age >= 18) && ($gender == 'Femme')) 
     {
-        echo 'Vous êtes une femme et vous êtes majeure.';
+        $identity = 'Vous êtes une femme et vous êtes majeure.';
     } elseif (($age <= 18) && ($gender == 'Femme')) 
     {
-        echo 'Vous êtes une femme et vous êtes mineure.';
+        $identity = 'Vous êtes une femme et vous êtes mineure.';
     }
-    return;
+    return $identity;
 }
 ?>
 <!DOCTYPE html>
